@@ -128,7 +128,25 @@
           <input id="twitter" type="checkbox" name="social" value="twitter" />
           <label for="twitter">Twitter</label>
           <br />
+
+          <label for="musicStyle">Estilo musical:</label>
+          <input
+            list="styleTypes"
+            id="musicStyle"
+            name="userMusicStyle"
+            type="text"
+          />
+          <br />
+          <datalist id="styleTypes">
+            <option value="Rock"></option>
+            <option value="Pop"></option>
+            <option value="Samba"></option>
+            <option value="Sertanejo"></option>
+          </datalist>
+
+          <input type="color" name="userFavoriteColor" id="favoriteColor">
         </fieldset>
+
         <button type="submit">Enviar</button>
       </form>
     </section>
