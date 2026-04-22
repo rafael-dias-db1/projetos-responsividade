@@ -55,6 +55,7 @@
 
           <input id="masc" type="radio" name="userGender" value="Masculino" />
           <label for="masc">Masculino</label>
+
           <input
             id="notInformed"
             type="radio"
@@ -143,8 +144,39 @@
             <option value="Samba"></option>
             <option value="Sertanejo"></option>
           </datalist>
-
+          <br />
+          <label for="favoriteColor">Cor Favorita</label>
           <input type="color" name="userFavoriteColor" id="favoriteColor" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Opinião</legend>
+
+          <p>O que você acha da qualidade do nosso serviço?</p>
+          <input id="otimo" type="radio" name="serviceOpinion" value="otimo" />
+          <label for="otimo">Ótimo</label>
+
+          <input id="boa" type="radio" name="serviceOpinion" value="boa" />
+          <label for="boa">Boa</label>
+
+          <input
+            id="regular"
+            type="radio"
+            name="serviceOpinion"
+            value="regular"
+          />
+          <label for="regular">Regular</label>
+
+          <input id="ruim" type="radio" name="serviceOpinion" value="ruim" />
+          <label for="ruim">Ruim</label>
+          <br />
+
+          <label for="opiniao">Opinião sobre a pesquisa:</label>
+          <textarea
+            id="opiniao"
+            name="userOpinion"
+            placeholder="Digite aqui sua opinião..."
+          ></textarea>
         </fieldset>
 
         <button type="submit">Enviar</button>
