@@ -30,8 +30,10 @@ h1 {
 
 form {
     background-color: #ffffff;
+    text-align: center;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 fieldset {
@@ -45,4 +47,87 @@ legend {
     font-weight: bold;
     font-size: 18px;
     padding: 0 5px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="color"] {
+    width: 40px;
+    padding: 0 5px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input[type="number"]:invalid {
+    border-color: red;
+}
+
+input[type="number"]:valid {
+    border-color: green;
+}
+
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    /* Para o botão de Enviar */
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: orangered;
+    /* Para o botão de Limpar */
+    color: white;
 }
